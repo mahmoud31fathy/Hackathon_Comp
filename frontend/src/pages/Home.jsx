@@ -71,8 +71,13 @@ const Home = () => {
         </div>
 
         {/* Center: Main Viewport */}
-        <div className="col-span-1 lg:col-span-2">
-          <SimulationView isSimulating={isSimulating} activeShape={activeShape} />
+        <div className="col-span-1 lg:col-span-2 relative">
+          <SimulationView 
+             isSimulating={isSimulating} 
+             activeShape={activeShape} 
+             windSpeed={windSpeed}
+             particleCount={particleCount}
+          />
         </div>
 
         {/* Right: Controls & Results */}
